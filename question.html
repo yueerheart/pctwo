@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/person.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="logo pull-left"><img src="img/logo.png" alt=""></div>
+        <form action="">
+            <div class="input-search pull-right">
+                <input class="search-box" type="text" placeholder="搜索您感兴趣的内容...">
+                <span class="search-btn">搜索答案</span>
+                <span class="ask-btn">我要提问</span>
+            </div>
+        </form>
+    </div>
+    <div class="nav">
+        <ul>
+            <li class="nLi"><a href="#">首页</a></li>
+            <li class="nLi"><a href="#">话题</a></li>
+            <li class="nLi"><a href="#">问答</a></li>
+            <li class="nLi"><a href="#">行情</a>
+                <ul class="sub">
+                    <li><a href="#">行情中心</a></li>
+                    <li><a href="#">行情中心</a></li>
+                    <li><a href="#">行情中心</a></li>
+                    <li><a href="#">行情中心</a></li>
+                </ul>
+            </li>
+            <li class="nLi"><a href="#">交易</a></li>
+            <li class="nLi"><a href="#">发现</a></li>
+            <li class="nLi"><a href="#">我的用户</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container banner">
+    <img src="img/personal/banner_01.png">
+</div>
+<div class="container person text-center que">
+    <h2>我要提问</h2>
+    <p>清晰描述您的提问，可以获得更加准确的回答</p>
+    <form>
+        <div>标题 ：<input type="text" class="q-in q-title q-font" value="请在这里输入您的标题"></div>
+        <div><span class="q-der-s pull-left">描述 ：</span><textarea class="q-textar q-font pull-left">请在这里输入内容及描述，字数在1000字范围内！ </textarea></div>
+        <div class="qType">问题类型 ：<input type="checkbox">房产<input type="checkbox">港股<input type="checkbox">基金<input type="checkbox">美股<input type="checkbox">保险
+            <input type="checkbox">沪深</div>
+        <div class=" q-ds-d">打赏 ：<input class="q-in q-ds" type="text" value="0">金币<span class="q-warn">注意：不填代表不打赏，单次打赏最高额度为200！</span></div>
+        <div style="margin:auto;"><input class="pw-sub" type="submit" value="保存"></div>
+    </form>
+</div>
+<div class="footer">
+    <div class="container">
+        <h3>快捷入口</h3>
+        <div class="footer-channel"><a href="#">A股开户</a><a href="#">蛋卷基金</a><a href="#">私募中心</a><a href="#">XX保险</a></div>
+        <div class="footer-link"><a href="#">常见问题</a><a href="#">联系方式</a><a href="#">加入我们</a><a href="#">关于雪球</a></div>
+        <div class="copyright">
+            风险提示：XX里任何用户或者嘉宾的发言，都有其特定立场，投资决策需要建立在独立思考之上<br>
+            Copyright © 1996-2017 IASK Corporation, All Right Reserved
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+    $(function(){
+        $(".per-tab-box").slide({trigger:"click"});
+        $(".per-tab-ul").find("li").click(function () {
+            $(".per-tab-ul").find("li").removeClass("str");
+            $(this).addClass("str");
+        })
+
+    })
+</script>
+</html>
